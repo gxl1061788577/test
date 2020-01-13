@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1500405_87h75enkhk8.css" />
+		<style type="text/css">
+			
+			/*主体*/
+			main{
+				margin-bottom: 15px;
+			}
+			/*中间大图*/
+			main .datu{
+				background: url(../images/index-datu.jpg) no-repeat;
+				height: 600px;
+				background-size: 1920px 600px;
+			}
+			/*中间主体内容*/
+			
+			/*板块一*/
+			main .b1{
+				width: 1114px;
+				margin: 0 auto;
+				margin-bottom: 95px;
+			}
+			main .hd{
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			main .hd p{
+				margin-top: 45px;
+				font-size: 22px;
+			}
+			main .hd span{
+				font-size: 12px;
+				color: #888;
+				position: relative;
+			}
+			main .hd span hr:nth-of-type(1){
+				left: -96px;
+				top: 3px;
+			}
+			main .hd span hr:nth-of-type(2){
+				right: -96px;
+				top: 3px;
+			}
+			main .hd span:before{
+				content:"";
+				width:3px;
+				height:3px;
+				background-color: #888;
+				position: absolute;
+				top: 8px;
+				right: -13px;
+				border-radius: 50%;
+			}
+			main .hd span:after{
+				content: "";
+				width: 3px;
+				height: 3px;
+				background-color: #888;
+				position: absolute;
+				top: 8px;
+				left: -13px;
+				border-radius: 50%;
+			}
+			hr{
+				position: absolute;
+				width: 83px;
+			}
+			main .b1 .bd{
+				padding-right: 45px;
+				box-sizing: border-box;
+			}
+			main .b1 .bd .img{
+				float: left;
+				width: 400px;
+				border: 1px solid #333;
+			}
+			
+			main .b1 .bd .img img{
+				transform: translateX(17px) translateY(-12px);
+			}
+			main .b1 .bd .right{
+				float: right;
+				width: 595px;
+			}
+			main .b1 .bd .right h3{
+				font-size: 20px;
+				position: relative;
+				margin-bottom: 88px;
+			}
+			main .b1 .bd .right h3:after{
+				content: "";
+				width: 36px;
+				height: 1px;
+				background-color: #000;
+				position: absolute;
+				bottom:-55px;
+				left: 0;
+			}
+			main .b1 .bd .right p{
+				font-size: 12px;
+				text-indent: 2em;
+				line-height: 30px;
+			}
+			main .b1 .bd .right p:not(:last-child){
+				margin-bottom: 10px;
+			}
+			
+			/*图片条*/
+			main .imgb{
+				width: 100%;
+				height: 120px;
+				background: url(../images/index-img2_02.jpg);
+				background-size: 1920px 120px;
+				background-position-x:50%;
+			}
+			main .imgb p{
+				text-align: center;
+				font-size:21px;
+				font-weight: 550;
+				color: #fff;
+				line-height:120px;
+			}
+			
+			/*第二块*/
+			main .b2{
+				margin-bottom: 75px;
+			}
+			main .b2 .bd{
+				display: flex;
+				justify-content: space-around;
+				
+			}
+			main .b2 .bd div{
+				width: 327px;
+				text-align: center;
+			}
+			main .b2 .bd div .img1{
+				width: 327px;
+				height: 298px;
+				position: relative;
+				background-size: 100% 100% !important;
+			}
+			main .b2 .bd div:nth-last-of-type(3) .img1{
+				background: url(../images/nt.jpg);
+			}
+			main .b2 .bd div:nth-last-of-type(2) .img1{
+				background: url(../images/kbjn.jpg);
+			}
+			main .b2 .bd div:nth-last-of-type(1) .img1{
+				background: url(../images/mk.jpg);
+			}
+			main .b2 .bd div span{
+				font-size:24px;
+				color: #666;
+				line-height: 64px;
+				position: relative;
+			}
+			main .b2 .bd div span:after{
+				content: "";
+				width: 32px;
+				height: 1px;
+				background-color: #333;
+				position: absolute;
+				bottom: -10px;
+				left: 32px;
+			}
+			main .b2 .bd div p{
+				font-size:14px;
+				color: #888;
+				line-height: 23px;
+			}
+			main .b2 .bd div .img1 .icf{
+				background-color: rgba(129,129,127,0.6);
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+			}
+			main .b2 .bd div .img1 .icf i{
+				font-size: 67px;
+				color: #fff;
+			}
+			main .b2 .bd div:hover span{
+				color: #000;
+			}
+			main .b2 .bd div:hover p{
+				color: #000;
+			}
+			main .b2 .bd div:hover .icf{
+				opacity: 1;
+			}
+			
+			/*第三块*/
+			main .b3{
+				padding: 30px 0 120px 0;
+				background-color: #f7f6f6;
+			}
+			main .b3 .bd{
+				display: flex;
+				justify-content: space-around;
+				padding: 0 36px;
+			}
+			main .b3 .bd div{
+				width: 246px;
+				
+			}
+			main .b3 .bd div .top{
+				width: 100%;
+				height: 406px;
+				background-size: 100% 100% !important;
+			}
+			main .b3 .bd div:nth-of-type(1) .top{
+				background: url(../images/jiasiting.jpg);
+			}
+			main .b3 .bd div:nth-of-type(2) .top{
+				background: url(../images/chali.jpg);
+			}
+			main .b3 .bd div:nth-of-type(3) .top{
+				background: url(../images/aiweier.jpg);
+			}
+			main .b3 .bd div:nth-of-type(4) .top{
+				background: url(../images/taile.jpg);
+			}
+			main .b3 .bd div .bottom{
+				height: 108px;
+				text-align: center;
+				border: 1px solid #333;
+				border-top: none;
+				box-sizing: border-box;
+				position: relative;
+			}
+			main .b3 .bd div .bottom .a1{
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			main .b3 .bd div .bottom .a1 h3{
+				font-size: 18px;
+			}
+			main .b3 .bd div .bottom .a1 h4{
+				font-size: 14px;
+			}
+			main .b3 .bd div:hover .bottom .a2{
+				display: block;
+			}
+			main .b3 .bd div .bottom .a2{
+				width: 100%;
+				background-color: #3b3b3b;
+				color: #fff;
+				padding: 0 14px ;
+				padding-bottom: 10px;
+				box-sizing: border-box;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				display: none;
+			}
+			main .b3 .bd div .bottom .a2 span{
+				font-size: 19px;
+				line-height: 50px;
+				position: relative;
+			}
+			main .b3 .bd div .bottom .a2 span:after{
+				content: "";
+				width:28px;
+				height:1px;
+				background-color:#fff;
+				position: absolute;
+				bottom: -8px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			main .b3 .bd div .bottom .a2 p{
+				line-height: 24px;
+			}
+			
+			/*第四块*/
+			main .b4{
+				margin-bottom: 50px;
+			}
+			main .b4 .bd{
+				padding: 0 63px;
+				padding-bottom: 45pz;
+				box-sizing: border-box;
+			}
+			main .b4 .bd img{
+				width: 660px;
+				height: 345px;
+				float: left;
+			}
+			main .b4 .bd ul{
+				width: 300px;
+				float: right;
+			}
+			main .b4 .bd ul li{
+				position: relative;
+				margin-bottom: 22px;
+			}
+			main .b4 .bd ul li i{
+				font-size: 60px;
+				position: absolute;
+				left: -70px;
+				top: -30px;
+			}
+			main .b4 .bd ul li p:nth-of-type(1){
+				font-size: 12px;
+				color: #888;
+				margin-bottom: 10px;
+			}
+			main .b4 .bd ul li p:nth-of-type(2){
+				font-size: 13px;
+				line-height: 25px;
+			}
+			main .b4 .bd ul li p:nth-of-type(3){
+				font-size: 13px;
+				color: #888;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="cl">
+				<div>
+					<img src="../images/logo.jpg" alt="" />
+				</div>
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">产品介绍</a></li>
+					<li><a href="">我们团队</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="datu"></div>
+			
+			<div class="b1">
+				<div class="hd">
+					<p>关于我们</p>
+					<span>About Us<hr /><hr /></span><br />
+					<img src="../images/index-icon_03.jpg" alt="" />
+				</div>
+				<div class="bd cl">
+					<div class="img">
+						<img src="../images/index-img1_03.jpg" alt="" />
+					</div>
+					<div class="right">
+						<h3>公司简介</h3>
+						<p>雀巢在我国西南部是最早进行农业投资的跨国公司，一直秉承“创造共享价值”的经营理念，致力于与从中央到地方的各相关部门合作，共同推动咖啡的产业化进程。经过多方共同合作，云南的咖啡产业有了长足发展，已逐步成为一个蓬勃发展、获利丰厚、深受全球咖啡界关注的优质小粒种咖啡豆产地。不仅如此，雀巢还在咖啡品牌打造和文化发展方面做出很多努力。雀巢公司在云南的咖啡发展项目获得了社会各界的认可，曾荣获联合国“2012世界商业与发展奖”，同年还被评为联合国“2012年全球契约中国最佳实践”。目前，雀巢所采购的咖啡豆全部通过4C认证。</p>
+						<p>雀巢在我国西南部是最早进行农业投资的跨国公司，一直秉承“创造共享价值”的经营理念，致力于与从中央到地方的各相关部门合作，共同推动咖啡的产业化进程。经过多方共同合作，云南的咖啡产业有了长足发展，已逐步成为一个蓬勃发展、获利丰厚、深受全球咖啡界关注的优质小粒种咖啡豆产地。不仅如此，雀巢还在咖啡品牌打造和文化发展方面做出很多努力。雀巢公司在云南的咖啡发展项目获得了社会各界的认可，曾荣获联合国“2012世界商业与发展奖”，同年还被评为联合国“2012年全球契约中国最佳实践”。目前，雀巢所采购的咖啡豆全部通过4C认证，为普洱咖啡的长期可持续发展奠定了基础。集培训、实验、仓储等为一体的“雀巢咖啡中心”已于2016年3月落成使用</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="imgb">
+				<p>浓香咖啡 让你享受每一个美好的午后时光</p>
+			</div>
+			
+			<div class="b2">
+				<div class="hd">
+					<p>产品介绍</p>
+					<span>Product<hr /><hr /></span><br />
+					<img src="../images/index-icon_03.jpg" alt="" />
+				</div>
+				<div class="bd">
+					<div>
+						<div class="img1">
+							<div class="icf">
+								<i class="iconfont icon-fangdajing"></i>
+							</div>
+						</div>
+						<span>拿铁咖啡</span>
+						<p>卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史，</p>
+					</div>
+					<div>
+						<div class="img1">
+							<div class="icf">
+								<i class="iconfont icon-fangdajing"></i>
+							</div>
+						</div>
+						<span>卡布基诺</span>
+						<p>卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史，</p>
+					</div>
+					<div>
+						<div class="img1">
+							<div class="icf">
+								<i class="iconfont icon-fangdajing"></i>
+							</div>
+						</div>
+						<span>摩卡咖啡</span>
+						<p>卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史，</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="b3">
+				<div class="hd">
+					<p>公司团队</p>
+					<span>Our team<hr /><hr /></span><br />
+					<img src="../images/index-icon_03.jpg" alt="" />
+				</div>
+				<div class="bd">
+					<div>
+						<div class="top"></div>
+						<div class="bottom">
+							<div class="a1">
+								<h3>贾斯汀·比伯</h3>
+								<h4>DUZU公司总裁</h4>
+							</div>
+							<div class="a2">
+								<span>贾斯汀·比伯</span>
+								<p class="lh">卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="top"></div>
+						<div class="bottom">
+							<div class="a1">
+								<h3>查理·普斯</h3>
+								<h4>Charlie Puth</h4>
+							</div>
+							<div class="a2">
+								<span>查理·普斯</span>
+								<p class="lh">卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="top"></div>
+						<div class="bottom">
+							<div class="a1">
+								<h3>艾薇儿·拉维尼</h3>
+								<h4>Avril Lavigne</h4>
+							</div>
+							<div class="a2">
+								<span>艾薇儿·拉维尼</span>
+								<p class="lh">卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="top"></div>
+						<div class="bottom">
+							<div class="a1">
+								<h3>泰勒·斯威夫特</h3>
+								<h4>Taylor Swift</h4>
+							</div>
+							<div class="a2">
+								<span>泰勒·斯威夫特</span>
+								<p class="lh">卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="b4">
+				<div class="hd">
+					<p>联系我们</p>
+					<span>Contact us<hr /><hr /></span><br />
+					<img src="../images/index-icon_03.jpg" alt="" />
+				</div>
+				<div class="bd cl">
+					<img src="../images/lxwm-img1_05.jpg" alt="" />
+					<ul>
+						<li>
+							<i class="iconfont icon-tel"></i>
+							<h3>咨询热线</h3>
+							<p>Information Hotline</p>
+							<p>重庆：+86 0123-867-7848</p>
+							<p>（09 : 30 ~ 18 : 30 北京时间）</p>
+						</li>
+						<li>
+							<i class="iconfont icon-dingweiweizhizuobiaoxianxing"></i>
+							<h3>公司地址</h3>
+							<p>Company address</p>
+							<p>地址：重庆大坪龙湖时代天街3号写字楼2407室</p>
+							<p>（09 : 30 ~ 18 : 30 北京时间）</p>
+						</li>
+						<li>
+							<i class="iconfont icon-xin1"></i>
+							<h3>公司邮箱</h3>
+							<p>E-mail</p>
+							<p>邮箱：info@haitouglobal.com</p>
+							<p>（09 : 30 ~ 18 : 30 北京时间）</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="cl">
+				<p>Copyright © 重庆duzu有限公司 | duzu备案号 33010602001878 号 版权所有：重庆戈登有限公司</p>
+				<img src="../images/logo.jpg" alt="" />
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1500405_87h75enkhk8.css" />
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+		<style type="text/css">
+			
+			/*主体*/
+			main{
+				margin-bottom: 15px;
+			}
+			/*中间大图*/
+			main .datu{
+				background: url(../images/lxwm-datu_02.jpg) no-repeat;
+			}
+			/*中间主体内容*/
+			main section{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			main section .m_hd{
+				height: 70px;
+				position: relative;
+				border-bottom: 1px solid #999;
+			}
+			main section .m_hd span{
+				position: absolute;
+				bottom: 3px;
+				left: 0;
+			}
+			main section .m_hd span:before{
+				content: "";
+				width: 2px;
+				height: 9px;
+				background-color: #866961;
+				position: absolute;
+				top: 9px;
+				left: 0;
+			}
+			main section .m_hd span h3{
+				font-size: 15px;
+				line-height: 15px;
+				text-indent: 0.8em;
+			}
+			main section .m_hd span p{
+				font-size: 12px;
+				color: #888;
+			}
+			main section .m_hd div{
+				position: absolute;
+				bottom: 3px;
+				right: 0;
+				font-size: 13px;
+			}
+			main section .m_hd div a{
+				font-size: 12px;
+			}
+			main section .m_hd div a:nth-of-type(2){
+				color: #888;
+			}
+			
+			main section .m_bd{
+				margin:25px 0;
+			}
+			main section .m_bd>div:nth-of-type(1){
+				width: 100%;
+				height: 300px;
+				margin-bottom: 50px;
+			}
+			main section .m_bd .bt{
+				margin-bottom: 50px;
+			}
+			main section .m_bd .bt div{
+				float: left;
+				margin-left: 90px;
+				position: relative;
+			}
+			main section .m_bd .bt div:not(:last-child){
+				margin-right: 25px;
+			}
+			main section .m_bd .bt div i{
+				font-size: 60px;
+				position: absolute;
+				left: -70px;
+				top: -30px;
+			}
+			main section .m_bd .bt div h3{
+				font-size: 17px;
+				line-height: 17px;
+				text-indent: 0.6em;
+				position: relative;
+			}
+			main section .m_bd .bt div h3:before{
+				content: "";
+				width: 2px;
+				height: 9px;
+				background-color: #866961;
+				position: absolute;
+				top: 12px;
+				left: 0;
+			}
+			main section .m_bd .bt div p:nth-of-type(1){
+				font-size: 12px;
+				color: #888;
+				margin-bottom: 20px;
+			}
+			main section .m_bd .bt div p:nth-of-type(2){
+				font-size: 13px;
+				line-height: 25px;
+			}
+			main section .m_bd .bt div p:nth-of-type(3){
+				font-size: 13px;
+				color: #888;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="cl">
+				<div>
+					<img src="../images/logo.jpg" alt="" />
+				</div>
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">产品介绍</a></li>
+					<li><a href="">我们团队</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="datu"></div>
+			<section>
+				<div class="m_hd cl">
+					<span>
+						<h3>联系我们</h3>
+						<p>Company profile</p>
+					</span>
+					<div>
+						<a href="">当前位置></a>
+						<a href="">首页></a>
+						<a href="">联系我们</a>
+					</div>
+				</div>
+				<div class="m_bd">
+					<div id="allmap"></div>
+					<div class="bt cl">
+						<div>
+							<i class="iconfont icon-tel"></i>
+							<h3>咨询热线</h3>
+							<p>Information Hotline</p>
+							<p>重庆：+86 0123-867-7848</p>
+							<p>（09 : 30 ~ 18 : 30 北京时间）</p>
+						</div>
+						<div>
+							<i class="iconfont icon-dingweiweizhizuobiaoxianxing"></i>
+							<h3>公司地址</h3>
+							<p>Company address</p>
+							<p>地址：重庆大坪龙湖时代天街3号写字楼2407室</p>
+							<p>（09 : 30 ~ 18 : 30 北京时间）</p>
+						</div>
+						<div>
+							<i class="iconfont icon-xin1"></i>
+							<h3>公司邮箱</h3>
+							<p>E-mail</p>
+							<p>邮箱：info@haitouglobal.com</p>
+							<p>（09 : 30 ~ 18 : 30 北京时间）</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="cl">
+				<p>Copyright © 重庆duzu有限公司 | duzu备案号 33010602001878 号 版权所有：重庆戈登有限公司</p>
+				<img src="../images/logo.jpg" alt="" />
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=DvrwDzgkitnzzcyxvcOx1Bja1KaqXDlP"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<script type="text/javascript">
+	// 百度地图API功能
+    var map = new BMap.Map('allmap');
+    var poi = new BMap.Point(106.53063501,29.54460611);
+    map.centerAndZoom(poi, 15);
+    map.enableScrollWheelZoom();
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                    '<img src="../img/baidu.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                    '地址：北京市海淀区上地十街10号<br/>电话：(010)59928888<br/>简介：百度大厦位于北京市海淀区西二旗地铁站附近，为百度公司综合研发及办公总部。' +
+                  '</div>';
+
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : "百度大厦",      //标题
+			width  : 290,             //宽度
+			height : 105,              //高度
+			panel  : "panel",         //检索结果面板
+			enableAutoPan : true,     //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_SEARCH,   //周边检索
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+    var marker = new BMap.Marker(poi); //创建marker对象
+    
+	    searchInfoWindow.open(marker);
+    
+    map.addOverlay(marker); //在地图中添加marker
+	
+</script>
+</html>

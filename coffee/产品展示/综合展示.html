@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<style type="text/css">
+			
+			/*主体*/
+			main{
+				margin-bottom: 15px;
+			}
+			/*中间大图*/
+			main .datu{
+				background: url(../images/datu1.jpg) no-repeat;
+			}
+			/*中间主体内容*/
+			main section{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			main section .m_hd{
+				height: 70px;
+				position: relative;
+				border-bottom: 1px solid #999;
+			}
+			main section .m_hd span:nth-of-type(1){
+				position: absolute;
+				bottom: 3px;
+				left: 0;
+			}
+			main section .m_hd span:nth-of-type(2){
+				position: absolute;
+				bottom: 3px;
+				left: 100px;
+			}
+			main section .m_hd span:nth-of-type(3){
+				position: absolute;
+				bottom: 3px;
+				left: 200px;
+			}
+			main section .m_hd span:before{
+				content: "";
+				width: 2px;
+				height: 9px;
+				background-color: #866961;
+				position: absolute;
+				top: 9px;
+				left: 0;
+			}
+			main section .m_hd span h3{
+				font-size: 15px;
+				line-height: 15px;
+				text-indent: 0.8em;
+			}
+			main section .m_hd span p{
+				font-size: 12px;
+				color: #888;
+			}
+			main section .m_hd div{
+				position: absolute;
+				bottom: 3px;
+				right: 0;
+				font-size: 13px;
+			}
+			main section .m_hd div a{
+				font-size: 12px;
+			}
+			main section .m_hd div a:nth-of-type(2),main section .m_hd div a:nth-of-type(3){
+				color: #888;
+			}
+			
+			main section .m_bd{
+				margin:25px 0;
+				position: relative;
+				display: none;
+			}
+			main section .m_bd img{
+				height: 505px;
+			}
+			
+			main section .m_bd div{
+				width: 530px;
+				font-size: 15px;
+				line-height: 30px;
+				text-indent: 2em;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				
+			}
+			main section .m_bd div p:not(:last-child){
+				margin-bottom: 25px;
+			}
+			
+		
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="cl">
+				<div>
+					<img src="../images/logo.jpg" alt="" />
+				</div>
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">产品介绍</a></li>
+					<li><a href="">我们团队</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="datu"></div>
+			
+			<section>
+				<div class="m_hd cl">
+					<span>
+						<h3>卡布基诺</h3>
+						<p>Cappuccino</p>
+					</span>
+					<span>
+						<h3>摩卡咖啡</h3>
+						<p>Mocha Coffee</p>
+					</span>
+					<span>
+						<h3>拿铁咖啡</h3>
+						<p>Cafe Latte</p>
+					</span>
+					<div>
+						<a href="">当前位置></a>
+						<a href="">首页></a>
+						<a href="">产品介绍></a>
+						<a href="">卡布基诺</a>
+					</div>
+				</div>
+				
+				<div class="m_bd cl" style="display: block;">
+					<img src="../images/kbjn.jpg" alt="" />
+					<div>
+						<p>卡布奇诺咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史，足以说明一个字常常会因为看来像某样东西，最后被引申成其它字义，远远超出造字者原先用意。听来似乎蛮复杂的。创设于一五二五年以后的圣芳济教会(Capuchin)的修士都穿著褐色道袍，头戴一顶尖尖帽子，圣芳济教会传到意大利时，当地人觉得修士服饰很特殊，就给他们取个Cappuccino的名字，此字的意大利文是指僧侣所穿宽松长袍和小尖帽，源自意大利文“头巾”即Cappuccino。</p>
+						<p>然而，老人爱喝咖啡，发觉浓缩咖啡、牛奶和奶泡混合后，颜色就像是修士所穿的深褐色道袍，于是灵机一动，就给牛奶加咖啡又有尖尖奶泡的饮料，取名为卡布奇诺(Cappuccino)。英文最早使用此字的时间在一九四八年，当时旧金山一篇报导率先介绍卡布奇诺饮料，一直到1990年以后，才成为世人耳熟能详的咖啡饮料。应该可以这么说Cappuccino咖啡这个字，源自圣芳济教会(Capuchin)和意大利文头巾(Cappucio)，相信Cappuccino的原始造字者，做梦也没料到僧侣的道袍最后会变成一种咖啡饮料名称。</p>
+					</div>
+				</div>
+				<div class="m_bd cl">
+					<img src="../images/mk.jpg" alt="" />
+					<div>
+						<p>摩卡咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史，足以说明一个字常常会因为看来像某样东西，最后被引申成其它字义，远远超出造字者原先用意。听来似乎蛮复杂的。创设于一五二五年以后的圣芳济教会(Capuchin)的修士都穿著褐色道袍，头戴一顶尖尖帽子，圣芳济教会传到意大利时，当地人觉得修士服饰很特殊，就给他们取个Cappuccino的名字，此字的意大利文是指僧侣所穿宽松长袍和小尖帽，源自意大利文“头巾”即Cappuccino。</p>
+						<p>然而，老人爱喝咖啡，发觉浓缩咖啡、牛奶和奶泡混合后，颜色就像是修士所穿的深褐色道袍，于是灵机一动，就给牛奶加咖啡又有尖尖奶泡的饮料，取名为卡布奇诺(Cappuccino)。英文最早使用此字的时间在一九四八年，当时旧金山一篇报导率先介绍卡布奇诺饮料，一直到1990年以后，才成为世人耳熟能详的咖啡饮料。应该可以这么说Cappuccino咖啡这个字，源自圣芳济教会(Capuchin)和意大利文头巾(Cappucio)，相信Cappuccino的原始造字者，做梦也没料到僧侣的道袍最后会变成一种咖啡饮料名称。</p>
+					</div>
+				</div>
+				<div class="m_bd cl">
+					<img src="../images/nt.jpg" alt="" />
+					<div>
+						<p>拿铁咖啡的味道很好，但它的名称来历却更有学问，一直是欧美研究文字变迁的最佳体材。 Cappuccino此字的历史，足以说明一个字常常会因为看来像某样东西，最后被引申成其它字义，远远超出造字者原先用意。听来似乎蛮复杂的。创设于一五二五年以后的圣芳济教会(Capuchin)的修士都穿著褐色道袍，头戴一顶尖尖帽子，圣芳济教会传到意大利时，当地人觉得修士服饰很特殊，就给他们取个Cappuccino的名字，此字的意大利文是指僧侣所穿宽松长袍和小尖帽，源自意大利文“头巾”即Cappuccino。</p>
+						<p>然而，老人爱喝咖啡，发觉浓缩咖啡、牛奶和奶泡混合后，颜色就像是修士所穿的深褐色道袍，于是灵机一动，就给牛奶加咖啡又有尖尖奶泡的饮料，取名为卡布奇诺(Cappuccino)。英文最早使用此字的时间在一九四八年，当时旧金山一篇报导率先介绍卡布奇诺饮料，一直到1990年以后，才成为世人耳熟能详的咖啡饮料。应该可以这么说Cappuccino咖啡这个字，源自圣芳济教会(Capuchin)和意大利文头巾(Cappucio)，相信Cappuccino的原始造字者，做梦也没料到僧侣的道袍最后会变成一种咖啡饮料名称。</p>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+		<footer>
+			<div class="cl">
+				<p>Copyright © 重庆duzu有限公司 | duzu备案号 33010602001878 号 版权所有：重庆戈登有限公司</p>
+				<img src="../images/logo.jpg" alt="" />
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var hd=document.getElementsByClassName("m_hd")[0];
+		var spans=hd.getElementsByTagName("span");
+		var divs=document.getElementsByClassName("m_bd");
+		var num=0;
+		for(var i=0;i<spans.length;i++){
+			spans[i].onclick=function(){
+				for(var j=0;j<spans.length;j++){
+					spans[j].style.backgroundColor="transparent";
+					divs[j].style.display="none";
+					if(this==spans[j]){
+						num=j;
+					}
+				}
+				this.style.backgroundColor="red";
+				console.log(divs[num]);
+				divs[num].style.display="block";
+			}
+		}
+	</script>
+</html>
